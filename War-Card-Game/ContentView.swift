@@ -24,9 +24,9 @@ struct ContentView: View {
                 Spacer()
                 HStack{
                     Spacer()
-                    Image("card3")
+                    Image(playerCard)
                     Spacer()
-                    Image("card4")
+                    Image(cpuCard)
                     Spacer()
                 }
                 Spacer()
@@ -56,7 +56,7 @@ struct ContentView: View {
                             .font(.largeTitle)
                             .foregroundColor(.white)
                             .padding(.bottom,10.0)
-                        Text("0")
+                        Text("\(playerScore)")
                             .font(.largeTitle)
                             .foregroundColor(.white)
                     }
@@ -66,12 +66,13 @@ struct ContentView: View {
                             .font(.largeTitle)
                             .foregroundColor(.white)
                             .padding(.bottom,10.0)
-                        Text("0")
+                        Text("\(cpuScore)")
                             .font(.largeTitle)
                             .foregroundColor(.white)
                     }
                     Spacer()
                 }
+                Spacer()
             }
         }
     }
