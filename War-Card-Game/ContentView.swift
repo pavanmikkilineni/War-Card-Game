@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var playerCard="card5"
-    @State var cpuCard="card6"
-    @State var playerScore=0
-    @State var cpuScore=0
+    @State private var playerCard="card5"
+    @State private var cpuCard="card6"
+    @State private var playerScore=0
+    @State private var cpuScore=0
     
     var body: some View {
         ZStack{
